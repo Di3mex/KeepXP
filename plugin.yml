@@ -1,0 +1,24 @@
+name: ${project.artifactId}
+main: ${project.mainclass}
+version: ${project.version}
+description: ${project.description}
+dev-url: ${project.url}
+#project lead
+author: Diemex
+commands:
+    keepxp:
+        description: Root command for KeepXP
+        usage: /keepxp - Show the main menu
+    keepxp us:
+        usage: /keepxp us <player> [exp] [percentage] - used scroll
+    keepxp eb:
+        usage: /keepxp eb <player>- unused/empty exp bottle
+    keepxp fb:
+        usage: /keepxp fb <player> [lvl] - bottle with the given levels
+permissions:
+    keepxp.craft:
+        description: Gives access to the crafting recipe of the expbottle
+        default: op
+    keepxp.admin:
+        description: Admin give commands
+        default: op
