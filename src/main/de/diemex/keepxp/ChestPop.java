@@ -46,7 +46,7 @@ public class ChestPop implements Listener
     private final Plugin plugin;
     private final ChestItem[] items;
     int probScale = 0;
-    private final boolean debug = true;
+    private final boolean debug = false;
 
 
     public ChestPop(Plugin plugin, ChestItem[] items)

@@ -85,9 +85,7 @@ public class ScrollOfKeeping implements Listener
      */
     public static int getLvlOfScroll(ItemStack stack)
     {
-        Validate.notNull(stack);
-
-        if (stack.hasItemMeta())
+        if (stack != null && stack.hasItemMeta())
         {
             ItemMeta meat = stack.getItemMeta();
             List<String> lore = meat.getLore();
