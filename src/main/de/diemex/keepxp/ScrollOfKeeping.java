@@ -89,7 +89,7 @@ public class ScrollOfKeeping implements Listener
         {
             ItemMeta meat = stack.getItemMeta();
             List<String> lore = meat.getLore();
-            if (lore.size() > 0)
+            if (lore != null && lore.size() > 0)
             {
                 String lastLine = lore.get(lore.size() - 1);
                 Pattern pattern = Pattern.compile("(?i)SOC lvl [0-9]"); //case insensitive
